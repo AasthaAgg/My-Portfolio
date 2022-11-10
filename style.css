@@ -184,3 +184,67 @@ a{
         box-shadow: 0 0 25px #e26a6e;
     }
 }
+
+
+/*===== TEMP_HOME =====*/
+
+.temp_home{
+    position: fixed;
+    top: 100px;
+    min-height: calc(100vh - 100px);
+    width: 100%;
+    background-color: black;
+    z-index: -1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/*===== ROLLOVER =====*/
+
+.rollover{
+    position: static;
+    width: 100%;
+}
+
+.rollover .main-sections{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 90px 40px 0 40px;
+}
+
+.rollover .main-sections h1{
+    width: fit-content;
+    padding: 20px;
+    border-radius: 1rem;
+    font-size: 2rem;
+    background: linear-gradient(135deg, rgba(248, 245, 245, 0.075), rgba(225, 225, 225, 0.049));
+    backdrop-filter: blur(10px);
+    box-shadow: 15px 18px 32px rgba(0, 0, 0, 0.5);
+}
+
+
+/*===== HOME =====*/
+
+.home{
+    height: calc(100vh - 0.1px);
+    opacity: 0;
+    margin-top: 0;
+}
+
+
+/*===== CONTACT =====*/
+
+.contact{
+    width: 100%;
+    padding-top: 120px;
+}
+
+.contact h1{
+    text-align: center;
+    background-color: black;
+    font-size: 2.25rem;
+}
