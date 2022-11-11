@@ -223,7 +223,7 @@ a{
     font-size: 2rem;
     background: linear-gradient(135deg, rgba(248, 245, 245, 0.075), rgba(225, 225, 225, 0.049));
     backdrop-filter: blur(10px);
-    box-shadow: 15px 18px 32px rgba(0, 0, 0, 0.5);
+    box-shadow: 15px 18px 32px rgba(34, 33, 33, 0.5);
     background: linear-gradient( 90deg , #c9317f 1%, #e26a6e 100%);
     background-clip: border-box;
     -webkit-background-clip: text;
@@ -237,7 +237,7 @@ a{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 20px;
+    padding: 20px 10px;
     border-radius: 1rem;
     background: linear-gradient(135deg, rgba(248, 245, 245, 0.075), rgba(225, 225, 225, 0.049));
     backdrop-filter: blur(10px);
@@ -367,6 +367,38 @@ a{
         flex-wrap: wrap;
         flex: 0;
     }
+}
+
+
+/*===== SKILLS =====*/
+
+.skill-img{
+    height: 10rem;
+    width: 10rem;
+    margin: 20px;
+    border-radius: 1rem;
+    border: solid thin #080808;
+    background-color: #080808;
+    box-shadow: 30px 25px 25px #0c0413;
+    transition: 0.3s;
+    padding: 1rem;
+    text-align: center;
+}
+
+.skill-img img{
+    height: 5rem;
+    width: 5rem;
+}
+
+.skill-img p{
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+.skill-img:hover{
+    transform: scale(1.03);
+    border-bottom: solid thin #c9317f;
+    box-shadow: 5px 5px 25px #e26a6e;
 }
 
 
