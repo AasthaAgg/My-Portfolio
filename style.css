@@ -213,7 +213,7 @@ a{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 90px 40px 0 40px;
+    padding: 80px 40px 0 40px;
 }
 
 .rollover .main-sections h1{
@@ -224,6 +224,10 @@ a{
     background: linear-gradient(135deg, rgba(248, 245, 245, 0.075), rgba(225, 225, 225, 0.049));
     backdrop-filter: blur(10px);
     box-shadow: 15px 18px 32px rgba(0, 0, 0, 0.5);
+    background: linear-gradient( 90deg , #c9317f 1%, #e26a6e 100%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 
@@ -240,11 +244,140 @@ a{
 
 .contact{
     width: 100%;
-    padding-top: 120px;
+    padding-top: 90px; 
 }
 
 .contact h1{
-    text-align: center;
+    width: fit-content;
+    margin-left: 50%;
+    transform: translateX(-50%);
     background-color: black;
     font-size: 2.25rem;
+    background: linear-gradient( 90deg , #c9317f 1%, #e26a6e 100%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* ===== CONTACT DETAILS ===== */
+
+.contact .contact-details{
+    width: 50%;
+    float: left;
+    padding: 4rem 2rem 2rem 2rem;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact .contact-details table{
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.contact .contact-details td{
+    padding: 5px;
+    min-width: 80px;
+    line-height: 1.65rem;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+.contact .contact-details table .table-icon{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.contact .contact-details h2{
+    margin-bottom: 2rem;
+    font-size: 1.85rem;
+    background: linear-gradient( 90deg , #c9317f 1%, #e26a6e 100%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contact .contact-details .media-icons{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact .contact-details .media-icons img{
+    height: 2.2rem;
+    width: 2.2rem;
+    border-radius: 50%;
+    cursor: pointer;
+    background: linear-gradient( 90deg , #c9317f 1%, #e26a6e 100%);
+    background-clip: border-box;
+    -webkit-background-clip: content-box;
+    -webkit-text-fill-color: transparent;
+}
+
+/* ===== CONTACT FORM ===== */
+
+.contact .contact-form{
+    width: 50%;
+    float: right;
+    padding: 4rem 4rem 2rem 4rem;
+    background-color: black;
+}
+
+.contact .contact-form .box{
+    width: 100%;
+    padding: 0.85rem 1.5rem ;
+    color: rgb(234, 225, 225);
+    letter-spacing: 1px;
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+    background-color: rgb(20, 19, 19);
+    border: solid thin black;
+    box-shadow: 1px 1px 2px #e26a6e;
+}
+
+.contact .contact-form .box:focus{
+    outline: none !important;
+}
+
+.contact .contact-form .form-btn{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(1%, #c9317f), to(#e26a6e));
+    font-size: 1.1rem;
+    padding: 10px 40px;
+    border-radius: 2rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.contact .contact-form .form-btn:hover{
+    border: solid thin #c9317f;
+    box-shadow: 0 0 30px #e26a6e;
+    font-size: 1.15rem;
+    font-weight: 700;
+    cursor: pointer;
+    background: linear-gradient( 90deg , #c9317f 1%, #e26a6e 100%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* ===== CONTACT MEDIA QUERIES ===== */
+
+@media screen and (max-width: 768px){
+    
+    .contact .contact-details{
+        width: 100%;
+        padding-top: 0;
+    }
+
+    .contact .contact-form{
+        width: 100%;
+        padding-bottom: 4rem;
+    }
 }
