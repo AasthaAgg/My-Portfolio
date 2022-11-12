@@ -402,6 +402,33 @@ a{
 }
 
 
+/*===== PROJECTS =====*/
+
+.project{
+    height: 10rem;
+    width: 16rem;
+    margin: 20px;
+    border-radius: 1rem;
+    border: solid thin #080808;
+    background-color: #080808;
+    box-shadow: 30px 25px 25px #0c0413;
+    transition: 0.3s;
+}
+
+.project:hover{
+    transform: scale(1.03);
+    border-bottom: solid thin #c9317f;
+    box-shadow: 5px 5px 25px #e26a6e;
+    cursor: pointer;
+}
+
+.project img{
+    height: calc(10rem - 1px);
+    width: calc(16rem - 1px);
+    border-radius: 1rem;
+}
+
+
 /*===== CONTACT =====*/
 
 .contact{
