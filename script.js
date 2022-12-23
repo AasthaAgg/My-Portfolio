@@ -21,3 +21,7 @@ for(var i=0; i<navLinks.length; i++){
         this.classList.toggle("active");
     });
 }
+
+// ===== SET PLAYBACK SPEED OF VIDEO ====
+
+document.querySelector('video').playbackRate = 0.6;
