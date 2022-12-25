@@ -35,6 +35,11 @@ body{
 
 /*===== NAVIGATION BAR =====*/
 
+img{
+    height: 90%;
+    width: auto;
+}
+
 li{
     list-style: none;
 }
@@ -50,7 +55,7 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5rem 8rem 0.5rem 4rem;
+    padding: 0.5rem 8rem 0.5rem 6rem;
     position: fixed;
     top:0;
     width: 100%;
