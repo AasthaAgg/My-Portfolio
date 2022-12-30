@@ -70,7 +70,7 @@ a{
     align-items: center;
     gap: 42px;
     font-size: 1.25rem;
-    transition: all 0.3s ease-in-out;
+    transition: 0.3s ease;
 }
 
 .nav-link:hover{
@@ -176,7 +176,7 @@ a{
         background-color: rgb(21, 19, 19);
         text-align: center;
         width: 100%;
-        transition: all 0.3s ease-in-out;
+        transition: 0.3s;
     }
 
     .nav-item{
@@ -226,10 +226,13 @@ a{
 }
 
 .rollover .main-sections h1{
-    width: auto;
+    width: fit-content;
     padding: 20px;
     border-radius: 1rem;
-    font-size: 2.25rem;
+    font-size: 2rem;
+    background: linear-gradient(135deg, rgba(248, 245, 245, 0.075), rgba(225, 225, 225, 0.049));
+    backdrop-filter: blur(10px);
+    box-shadow: 15px 18px 32px rgba(34, 33, 33, 0.5);
     background: linear-gradient( 90deg , #c9317f 1%, #e26a6e 100%);
     background-clip: border-box;
     -webkit-background-clip: text;
@@ -391,7 +394,7 @@ a{
     position: relative;
     margin: 1rem 0;
     overflow: hidden;
-    transition: all 0.3s ease-in-out;
+    transition: 0.3s;
 }
     
 .education .main-sections-div .box:hover {
@@ -499,7 +502,7 @@ a{
     border: solid thin #080808;
     background-color: #080808;
     box-shadow: 30px 25px 25px #0c0413;
-    transition: all 0.3s ease-in-out;
+    transition: 0.3s;
     padding: 1rem;
     text-align: center;
 }
@@ -541,100 +544,28 @@ a{
 
 /*===== PROJECTS =====*/
 
-#projects .main-sections-div{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
 .project{
-    position: relative;
-    height: 18rem;
-    width: 26rem;
-    margin: 40px 5px;
-    border-radius: 2rem;
-    border: solid #080808;
+    height: 12rem;
+    width: 18rem;
+    margin: 20px;
+    border-radius: 1rem;
+    border: solid thin #080808;
     background-color: #080808;
     box-shadow: 30px 25px 25px #0c0413;
-    transition: all 0.3s ease-in-out;
-    overflow: hidden;
+    transition: 0.3s;
 }
-
-.project img{
-    height: 100%;
-    width: 100%;
-}
-
-
-.project .project-desc{
-    position: absolute;
-    bottom: 0;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem 3rem;
-    background-color: #000000d0;
-    opacity: 0;
-    transition: all 0.4s ease-in-out;
-}
-
-.project .project-desc h1{
-    font-size: 2.15rem;
-    padding: 0;
-    margin-bottom: 1.5rem;
-}
-
-.project .project-desc p{
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 1px;
-    text-align: center;
-    margin-bottom: 2.5rem;
-}
-
-
-.project .project-desc .project-btns{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.project .project-desc .project-btns a{
-    max-width: 50%;
-    color: white;
-    background-image: -webkit-gradient(linear, left top, right top, color-stop(1%, #c9317f), to(#e26a6e));
-    font-size: 1rem;
-    padding: 9px 26px;
-    border-radius: 2rem;
-    border: none;
-    letter-spacing: 1px;
-    font-weight: 500;
-    transition: all 0.3s ease-in-out;
-    cursor: pointer;
-}
-
-.project .project-desc .project-btns a:hover{
-    border: solid #c9317f;
-    box-shadow: 0 0 20px #e26a6e;
-    font-weight: 850;
-    transform: scale(1.03);
-    background: linear-gradient( 90deg , #c9317f 1%, #e26a6e 100%);
-    background-clip: border-box;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
 
 .project:hover{
     transform: scale(1.03);
+    border-bottom: solid thin #c9317f;
+    box-shadow: 5px 5px 25px #e26a6e;
+    cursor: pointer;
 }
 
-.project:hover .project-desc{
-    opacity: 1;
+.project img{
+    height: calc(12rem - 1px);
+    width: calc(18rem - 1px);
+    border-radius: 1rem;
 }
 
 
@@ -738,8 +669,6 @@ a{
     color: rgb(234, 225, 225);
     letter-spacing: 1px;
     font-size: 1.15rem;
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: normal;
     margin-bottom: 0.75rem;
     background-color: rgb(20, 19, 19);
     border: solid thin black;
